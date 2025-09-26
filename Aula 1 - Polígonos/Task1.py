@@ -27,7 +27,6 @@ def menu():
         escolha = input("Escolha uma opção (1-4): ")
 
         if escolha == "1":
-            # Criar submenu numerado
             nomes = list(poligonos.keys())
             print("\nEscolha o polígono pelo número:")
             for i, nome in enumerate(nomes, start=1):
