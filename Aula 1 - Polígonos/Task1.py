@@ -123,13 +123,10 @@ def verificar(lados):
     if len(lados) == 3:
         if lados[0] == lados[1] and lados[1] == lados[2]:
             print('O polígono é um triangulo equilátero')
-            print(' | '.join([f'Lado {i + 1} - {lado:.2f}' for i, lado in enumerate(lados)]))
         if lados[0] == lados[1] and lados[0] != lados[2] or lados[2] == lados[1] and lados[2] != lados[0] or lados[0] == lados[2] and lados[0] != lados[1]:
             print('O polígono é um triangulo isósceles')
-            print(' | '.join([f'Lado {i + 1} - {lado:.2f}' for i, lado in enumerate(lados)]))
         if lados[0] != lados[1] and lados[2] != lados[1] and lados[0] != lados[1]:
             print('O polígono é um triangulo escaleno')
-            print(' | '.join([f'Lado {i + 1} - {lado:.2f}' for i, lado in enumerate(lados)]))
 
     if len(lados) == 4:
         if lados[0] == lados[1] and lados[1] == lados[2] and lados[2] == lados[3]:
