@@ -5,6 +5,7 @@ def VerificarCPF(cpf):
             cpf = input('Digite o CPF: ')
             cpf = cpf.replace('.', '').replace('-', '')
             if not cpf.isdigit():
+
                 print('Caracteres invalidos!')
                 continue
             if  len(cpf) < 11:
