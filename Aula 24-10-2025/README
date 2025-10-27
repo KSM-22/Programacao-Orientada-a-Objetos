@@ -1,0 +1,43 @@
+Este projeto apresenta um diagrama de classes UML que modela um sistema bancário simplificado, desenvolvido como parte dos estudos de Programação Orientada a Objetos (POO).
+
+O sistema é composto por duas classes principais:
+
+1. Banco
+
+	Representa a instituição responsável por gerenciar as contas.
+	Atributos e métodos principais:
+
+	+ agencia: List — lista de agências associadas ao banco.
+
+	+ Transferir(Saldo, Destino(Conta), valor: float) — realiza transferências entre contas.
+
+	+ ProcurarConta(agencia, NumeroConta): Conta — busca uma conta específica.
+
+	+ CriarConta(): Conta — cria uma nova conta bancária.
+
+	+ ApagarConta(): Conta — remove uma conta existente.
+
+2. Conta
+
+	Modela uma conta bancária individual.
+	Atributos e métodos principais:
+
+	- saldo: float — armazena o saldo atual.
+
+	+ chave_pix: str — chave PIX associada à conta.
+
+	+ agencia: str — identifica a agência da conta.
+
+	+ NumeroConta(): int — retorna o número da conta.
+
+	+ Creditar(): float — adiciona valor ao saldo.
+
+	+ Debitar(): float — retira valor do saldo.
+
+	+ Transferir(Saldo, Destino(Conta), valor: float) — transfere valores entre contas.
+
+	- Investimentos(Saldo, valor: float) — método interno relacionado a aplicações financeiras.
+
+Relacionamento:
+
+	A classe Banco possui uma associação com a classe Conta, indicando que o banco gerencia várias contas bancárias.

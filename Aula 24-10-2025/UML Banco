@@ -1,0 +1,26 @@
+@startuml
+title Diagrama de Classes - Sistema Bancário
+
+class Banco {
+    + agencia: List
+
+    + Transferir(Saldo, Destino(Conta), valor: float)
+    + ProcurarConta(agencia, NumeroConta): Conta
+    + CriarConta(): Conta
+    + ApagarConta(): Conta
+}
+
+class Conta {
+    - saldo: float
+    + chave_pix: str
+    + agencia: str
+
+    + NumeroConta(): int
+    + Creditar(): float
+    + Debitar(): float
+    + Transferir(Saldo, Destino(Conta), valor: float)
+    - Investimentos(Saldo, valor: float)
+}
+
+Banco --> Conta : gerencia >
+@enduml
