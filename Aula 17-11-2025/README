@@ -21,7 +21,7 @@ A estrutura recomendada do projeto é:
 
 
 Descrição dos Arquivos:
-1. Sistema.py
+1. sistema.py
 Contém a classe SistemaUFC, responsável por:
 armazenar os campus
 criar, listar e remover campus
