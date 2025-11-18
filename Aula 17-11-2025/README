@@ -1,0 +1,105 @@
+Sistema UFC:
+Este projeto implementa um sistema simples de gerenciamento da Universidade Federal do Ceará (UFC), utilizando Programação Orientada a Objetos (POO) em Python.
+
+O sistema permite:
+- Cadastrar campus
+- Listar campus
+- Remover campus
+- Cadastrar cursos dentro de um campus
+- Listar cursos
+- Remover cursos
+- Usar um menu interativo no terminal
+- Selecionar campus por número, não por nome
+- Gerar códigos automáticos para cada curso
+- O objetivo é demonstrar a aplicação de POO, listas e CRUD de forma prática.
+
+A estrutura recomendada do projeto é:            
+─ sistema.py           
+─ campus.py            
+─ cursos.py            
+─ README.md            
+
+
+Descrição dos Arquivos:
+1. Sistema.py
+Contém a classe SistemaUFC, responsável por:
+armazenar os campus
+criar, listar e remover campus
+criar, listar e remover cursos de campus
+buscar campus pelo índice digitado pelo usuário
+Também contém as validações para impedir erros de entrada.
+
+2. campus.py
+Representa um campus da UFC.
+Cada campus possui:
+nome
+lista de cursos
+Permite adicionar e remover cursos.
+
+3. cursos.py
+Representa um curso da UFC.
+Cada curso possui:
+- nome
+- código gerado automaticamente
+- Os códigos podem ser incrementais (ex: C001, C002, C003...).
+
+
+Como Executar o Projeto:
+1. Instalar o Python
+
+Certifique-se de ter o Python 3 instalado.
+Para verificar:
+"python --version" ou "python3 --version"
+
+Se não tiver, baixe aqui:
+https://www.python.org/downloads/
+
+2. Baixar ou clonar o projeto
+Via Git:
+git clone https://github.com/seu-usuario/sistema-ufc.git
+cd sistema-ufc
+
+Ou simplesmente baixe o .zip e extraia.
+
+3. Executar o programa
+No terminal, dentro da pasta do projeto:
+"python Sistema.py" ou "python3 Sistema.py"
+
+
+Funcionamento do Menu:
+Ao rodar o sistema, você verá:
+
+===== SISTEMA UFC =====
+1. Criar Campus
+2. Listar Campus
+3. Remover Campus (por número)
+4. Adicionar Curso a Campus (por número)
+5. Listar Cursos (por número)
+6. Remover Curso (por número)
+0. Sair
+
+Você interage digitando os números.
+
+Seleção de Campus por Número:
+O usuário não precisa digitar nomes.
+Exemplo:
+
+1. Campus do Benfica
+2. Campus do Pici
+3. Campus de Porangabuçu
+
+Para trabalhar com o campus do Pici basta digitar:
+2
+
+Isso evita erros de digitação.
+
+
+Geração Automática de Código de Curso:
+Ao criar um curso, o código NÃO precisa ser digitado.
+Ele é criado automaticamente assim:
+C001
+C002
+C003
+...
+
+Isso garante padronização e elimina erros de entrada.
