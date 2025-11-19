@@ -1,7 +1,7 @@
 class Campus:
-    def __init__(self, nome):
+    def __init__(self, nome, cursos):
         self.nome = nome
-        self.cursos = []  # Lista de cursos
+        self.cursos = cursos  # <-- AQUI ESTÁ A CORREÇÃO
 
     def adicionar_curso(self, curso):
         self.cursos.append(curso)
@@ -21,5 +21,3 @@ class Campus:
 
     def __str__(self):
         return f"Campus: {self.nome} ({len(self.cursos)} cursos)"
-
-
